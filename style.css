@@ -172,7 +172,7 @@ address>div {
     padding-top: 80px;
 }
 
-.section__title  {
+.section__title {
     font-size: 64px;
     font-weight: 700;
     line-height: 72px;
@@ -195,4 +195,99 @@ address>div {
 .sectionButton {
     color: #0046BB;
     margin-top: 40px;
+}
+
+/* slider */
+.slider {
+    width: 60.93%;
+    margin: 0 auto;
+}
+
+.slider__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.slider__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slader__block1 {
+    background: url(./images/slider1.png) center;
+    background-color: #F2F5F5;
+}
+
+.slader__block {
+    justify-content: center;
+    border-radius: 15px;
+    padding: 23.9% 2.1% 0 3%;
+    width: 31.62%;
+    height: auto;
+}
+
+.slader__block__row {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.slader__block1__text {
+    width: 166px;
+}
+
+.slader__block__text {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+.sliderButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.slader__block2__img {
+    background-color: #fff;
+}
+
+.slader__block__img {
+    padding: 0;
+    padding: 13px;
+    border-radius: 30px;
+}
+
+/* slader__block2 */
+.slader__block2 {
+    background: url("./images/slider2.png") center;
+    background-color: #0046BB;
+}
+
+.slader__block2__text {
+    width: 148px;
+    color: #ffffff;
+}
+
+.slader__block1__img,
+.slader__block3__img {
+    background-color: #0046BB;
+}
+
+/* slader__block3 */
+.slader__block3 {
+    background: url("./images/slider3.png") center;
+    background-color: #F2F5F5;
+}
+
+.slader__block3__text {
+    width: 148px;
 }
