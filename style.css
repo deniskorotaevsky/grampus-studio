@@ -144,6 +144,13 @@ address>div {
     background-color: #0046BB;
 }
 
+.headerButton:hover {
+    color: #0046BB;
+    background-color: #ffffff;
+    outline: 1px solid #0046BB;;
+    transition: background-color .5s, color .5s, outline .5;
+}
+
 .iconMessages {
     display: flex;
 }
@@ -156,6 +163,35 @@ address>div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
+}
+
+.header__menu__img__whatsapp {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color:  #ffffff;
+    background-image: url('images/whatsapp.png');
+    cursor: pointer;
+}
+
+.header__menu__img__whatsapp:hover {
+    background-image: url('images/whatsapp-grey.png');
+    transition: background-image .5s;
+}
+
+.header__menu__img__telegram {
+    width: 18px;
+    height: 15px;
+    border: none;
+    background-color: #ffffff;
+    background-image: url('images/telegram.png');
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.header__menu__img__telegram:hover {
+    background-image: url('images/telegram-grey.png');
+    transition: background-image .5s;
 }
 
 /* section */
@@ -197,6 +233,12 @@ address>div {
     margin-top: 40px;
 }
 
+.sectionButton:hover {
+    color: #ffffff;
+    background-color:#0046BB;
+    transition: background-color .5s, color .5s, border .5;
+}
+
 /* slider */
 .slider {
     width: 60.93%;
@@ -217,12 +259,12 @@ address>div {
     flex-wrap: wrap;
 }
 
-.slader__block1 {
+.slider__block1 {
     background: url(./images/slider1.png) center;
     background-color: #F2F5F5;
 }
 
-.slader__block {
+.slider__block {
     justify-content: center;
     border-radius: 15px;
     padding: 23.9% 2.1% 0 3%;
@@ -230,7 +272,7 @@ address>div {
     height: auto;
 }
 
-.slader__block__row {
+.slider__block__row {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -238,56 +280,60 @@ address>div {
     margin-bottom: 25px;
 }
 
-.slader__block1__text {
+.slider__block1__text {
     width: 166px;
 }
 
-.slader__block__text {
+.slider__block__text {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0em;
+    width: 150px;
 }
 
-.sliderButton {
+.slider__block__img {
     border: none;
-    background: none;
     cursor: pointer;
-}
-
-.slader__block2__img {
-    background-color: #fff;
-}
-
-.slader__block__img {
-    padding: 0;
-    padding: 13px;
+    padding: 12px;
     border-radius: 30px;
-}
-
-/* slader__block2 */
-.slader__block2 {
-    background: url("./images/slider2.png") center;
     background-color: #0046BB;
+    background-image: url('images/arrow-white.png');
+    background-size: cover;
+    border: 13px #0046BB solid;
 }
 
-.slader__block2__text {
+/* slider__block2 */
+.slider__block2 {
+    background: url("./images/slider2.png") center;
+    background-color: #F2F5F5;
+}
+
+.slider__block2__text {
     width: 148px;
     color: #ffffff;
 }
 
-.slader__block1__img,
-.slader__block3__img {
-    background-color: #0046BB;
-}
-
-/* slader__block3 */
-.slader__block3 {
+/* slider__block3 */
+.slider__block3 {
     background: url("./images/slider3.png") center;
     background-color: #F2F5F5;
 }
 
-.slader__block3__text {
+.slider__block3__text {
     width: 148px;
+}
+
+.slider__block:hover {
+    background-color: #0046BB;
+    color: #ffffff;
+    transition: background-color 1s;
+
+    .slider__block__img {
+        background-color: #ffffff;
+        background-image: url('images/arrow-blue.png');
+        border: 13px #ffffff solid;
+        transition: background-color 1s, border 1s, background-image .5s;
+    }
 }
