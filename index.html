@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Grampus-studio</title>
 </head>
 
@@ -57,35 +58,82 @@
     </section>
 
     <!-- slider -->
-    <div class="slider">
+    <div class="swiper">
+        <div class="mySwiper">
+          <h2 class="slider__title">Категории материалов</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider__block1 slider__block">
+                <div class="slider__block__row">
+                  <p class="slider__block__text">Строительные материалы</p>
+                  <button type="button" class="slider__block__img"></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__block2 slider__block">
+                <div class="slider__block__row">
+                  <p class="slider__block__text">Крепёжные
+                    инструменты</p>
+                  <button type="button" class="slider__block__img"></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__block3 slider__block">
+                <div class="slider__block__row">
+                  <p class="slider__block__text">Отделочные
+                    материалы</p>
+                  <button type="button" class="slider__block__img"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-block">
+            <div class="swiper-button-prev"><img src="./images/ArrowLeft.png" width="24px" height="24px"></div>
+            <div class="swiper-button-next"><img src="./images/Arrow - Right.png" width="24px" height="24px"></div>
+          </div>
+        </div>
+      </div>
+
+
+    <main class="main">
         <div class="container">
-            <h2 class="slider__title">Категории материалов</h2>
-            <div class="slider__box">
-                <div class="slider__block1 slider__block">
-                    <div class="slider__block__row">
-                        <p class="slider__block__text">Строительные материалы</p>
-                        <button type="button" class="slider__block__img"></button>
-                    </div>
+            <div class="main__block">
+
+
+                <p class="main__block__title">Не нашли нужную категорию материала?</p>
+                <div class="main__block__text">
+                    Оставьте номер телефона, мы перезвоним в течение рабочего дня и проконсультируем по всем вопросам
                 </div>
 
-                <div class="slider__block2 slider__block">
-                    <div class="slider__block__row">
-                        <p class="slider__block__text">Крепёжные
-                            инструменты</p>
-                        <button type="button" class="slider__block__img"></button>
-                    </div>
+
+                <div class="main__block__inputGroup">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="number" placeholder="Номер телефона">
                 </div>
 
-                <div class="slider__block3 slider__block">
-                    <div class="slider__block__row">
-                        <p class="slider__block__text">Отделочные
-                            материалы</p>
-                        <button type="button" class="slider__block__img"></button>
-                    </div>
+
+                <div class="main__block__btnInfo">
+                    <p class="main__block__info">*Нажимая на кнопку, Вы соглашаетесь на <span class="main__block__btnInfo-underlining">обработку персональных данных</span></p>
+                    <button  type="button" class="main__block__btn button">Отправить</button>
                 </div>
+
+                .
+
             </div>
         </div>
-    </div>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
