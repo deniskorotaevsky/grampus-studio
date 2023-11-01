@@ -246,7 +246,8 @@ address>div {
     width: 60.93vw;
     position: relative;
     height: auto;
-    margin-top: 85px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .swiper-wrapper {
@@ -367,8 +368,11 @@ address>div {
     }
 }
 
-
 /* main */
+.main {
+    margin-bottom: 80px;
+}
+
 .main__block {
     display: flex;
     justify-content: center;
@@ -400,7 +404,6 @@ address>div {
     text-align: left;
     color: #ffffff;
     width: 495px;
-
 }
 
 .main__block__inputGroup {
@@ -446,6 +449,12 @@ address>div {
     height: 54px;
 }
 
+.main__block__btn:hover {
+    color: #0046BB;
+    background-color: #ffffff;
+    transition: background-color .5s, color .5s;
+}
+
 .main__block__info {
     align-items: center;
     font-size: 14px;
@@ -459,4 +468,190 @@ address>div {
 
 .main__block__btnInfo-underlining {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(56, 56, 56, .5);
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transform: opacity .4s, visibility .4s;
+}
+
+.modal__box {
+    max-width: 1170px;
+    position: relative;
+    max-width: 1170px; 
+    padding: 60px 90px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 90px auto 30px;
+    transform: scale(0);
+    transition: transform .8s;
+    border-radius: 15px;
+}
+
+.modal.open .modal__box {
+    transform: scale(1);
+}
+
+.modal__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 30px;
+    color: rgba(56, 56, 56, 1);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__box__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    width: auto;
+    margin-bottom: 40px;
+}
+
+.modal__box__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.modal__box-fw500 {
+    font-weight: 500;
+}
+
+.modal__box__text {
+    margin: 0;
+}
+
+/* wrap */
+.wrap__body {
+    display: flex;
+    padding-left: 40px;
+}
+
+.wrap__body__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #383838;
+    width: 89%;
+    margin-bottom: 40px;
+}
+
+.wrap__body__left__block1__text {
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.wrap__body__left__block1,
+.wrap__body__left__block2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F2F6FC;
+    justify-content: center;
+    width: 22.13vw;
+    min-width: 340px;
+    height: 40.5%;
+    max-height: 200px;
+    margin: 30px 0;
+    border-radius: 15px;
+    padding: 0px 30px 0 65px;
+}
+
+.wrap__body__left__block1-mt0 {
+    margin-top: 0;
+}
+
+.wrap__body__left__block1__prof {
+    height: 100%;
+    margin-top: 25px;   
+}
+
+.wrap__body__left__block1 h3,
+.wrap__body__left__block2 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+.wrap__body__left__block1__text,
+.wrap__body__left__block2__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    width: auto;
+    max-width: 280px;
+    margin: 5px 0 0;
+}
+
+.wrap__body__left__block1__img,
+.wrap__body__left__block2__img {
+    position: absolute;
+    left: -40px;
+}
+
+.wrap__body__right {
+    margin-left: 5%;
+}
+
+.wrap__body__right p {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #383838;
+    margin: 15px 0;
+}
+.wrap__body__right__items__list {
+    display: flex;
+    align-items: center;
+}
+
+p.wrap__body__right__item {
+    padding-left: 10px;
+    margin: 7px 0;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+p.wrap__body__right__item-mt0 {
+    margin-top: 0;
+}
+
+p.wrap__body__right__text {
+    margin-top: 0;
+}
+
+p.wrap__body__right__item-mb0 {
+    margin-bottom: 0;
 }
