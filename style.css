@@ -489,7 +489,7 @@ address>div {
 .modal__box {
     max-width: 1170px;
     position: relative;
-    max-width: 1170px; 
+    max-width: 1170px;
     padding: 60px 90px;
     z-index: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -549,6 +549,14 @@ address>div {
 }
 
 /* wrap */
+.wrap {
+    background-image: url('images/oval-background.png');
+    background-position-x: 53%;
+    background-position-y: 37%;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
 .wrap__body {
     display: flex;
     padding-left: 40px;
@@ -592,7 +600,7 @@ address>div {
 
 .wrap__body__left__block1__prof {
     height: 100%;
-    margin-top: 25px;   
+    margin-top: 25px;
 }
 
 .wrap__body__left__block1 h3,
@@ -631,6 +639,7 @@ address>div {
     color: #383838;
     margin: 15px 0;
 }
+
 .wrap__body__right__items__list {
     display: flex;
     align-items: center;
@@ -654,4 +663,90 @@ p.wrap__body__right__text {
 
 p.wrap__body__right__item-mb0 {
     margin-bottom: 0;
+}
+
+/* aside */
+.aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/aside-background.jpg') center no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 53.7vh;
+}
+
+.aside__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__block__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    margin-top: 60px;
+}
+
+.aside__block__item {
+    margin-bottom: 30px;
+    padding-right: 6%;
+}
+
+.aside__block__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.aside__block__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #ffffff;
+}
+
+.aside__block__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: url('images/subtract.png') center no-repeat;
+    width: auto;
+    padding-left: 65px;
+   width: 340px;
+    height: 108px;
+    border-radius: 15px;
+}
+.aside__block__item-blue {
+    background: url('images/subtract-blue.png') center no-repeat;
+}
+
+.aside__block__item__img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: -30px;
+}
+
+.aside__block__item__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.aside__block__item__button {
+    background-color: rgba(0, 70, 187, 1);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'PT Root UI';
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
