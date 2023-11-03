@@ -499,6 +499,10 @@ address>div {
     border-radius: 15px;
 }
 
+.modal__box p {
+    line-height: 24px;
+}
+
 .modal.open .modal__box {
     transform: scale(1);
 }
@@ -549,14 +553,6 @@ address>div {
 }
 
 /* wrap */
-.wrap {
-    background-image: url('images/oval-background.png');
-    background-position-x: 53%;
-    background-position-y: 37%;
-    background-repeat: no-repeat;
-    background-size: 1000px;
-}
-
 .wrap__body {
     display: flex;
     padding-left: 40px;
@@ -665,6 +661,7 @@ p.wrap__body__right__item-mb0 {
     margin-bottom: 0;
 }
 
+
 /* aside */
 .aside {
     display: flex;
@@ -718,12 +715,15 @@ p.wrap__body__right__item-mb0 {
     background: url('images/subtract.png') center no-repeat;
     width: auto;
     padding-left: 65px;
-   width: 340px;
+    width: 340px;
     height: 108px;
     border-radius: 15px;
 }
+
 .aside__block__item-blue {
     background: url('images/subtract-blue.png') center no-repeat;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .aside__block__item__img {
@@ -740,13 +740,149 @@ p.wrap__body__right__item-mb0 {
     letter-spacing: 0em;
 }
 
-.aside__block__item__button {
-    background-color: rgba(0, 70, 187, 1);
-    border: none;
-    color: #ffffff;
+/* aside__modal */
+.aside__mod {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 499;
+    width: 100%; 
+    height: 100vh;
+    background-color: rgba(56, 56, 56, .5);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: opacity .4s, visibility .4s;   
+}
+
+.aside__modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 736px;
+    border-radius: 15px;
+    padding: 0 70px;
+    background-color: #ffffff;
+    z-index: 1;
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.aside__mod.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.aside__mod.open .aside__modal {
+    transform: scale(1);
+}
+
+.aside__modal__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 30px;
+    color: rgba(56, 56, 56, 1);
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.aside__modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__modal__form__textarea {
+    resize: none;
+    width: 430px;
+    height: 150px;
+    border-radius: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    outline: 1px solid rgba(0, 70, 187, 1);
+    border: none;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.aside__modal__title {
     font-family: 'PT Root UI';
+    font-size: 64px;
     font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.aside__modal__form__input {
+    height: 54px;
+    padding-left: 35px;
+    padding-right: 35px;
+    outline: 1px solid rgba(0, 70, 187, 1);
+    border: none;
+    border-radius: 30px;
+    color: rgba(0, 70, 187, 1);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.aside__modal__form__textarea::-webkit-input-placeholder {
+    color: #0046BB;
+}
+
+.aside__modal__form__input::-webkit-input-placeholder {
+    color: #0046BB;
+}
+
+.aside__modal__form__input:focus {
+    border: none;
+}
+
+.aside__modal__form__input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.aside__modal__form__button {
+    width: 430px;
+    height: 54px;
+    padding: 15px 176px 15px 176px;
+    border-radius: 30px;
+    background-color: rgba(0, 70, 187, 1);
+    color: #ffffff;
+    font-family: 'PT Root UI';
+    font-size: 16px;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
+    border: none;
+    cursor: pointer;
+}
+
+.aside__modal__text {
+    font-family: 'PT Root UI';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin: 15px 0 0;
+}
+
+.aside__modal__text-underlining {
+    text-decoration: underline;
+    cursor: pointer;
 }
