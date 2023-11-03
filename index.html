@@ -111,14 +111,14 @@
                 </div>
                 <div class="main__block__btnInfo">
                     <p class="main__block__info">*Нажимая на кнопку, Вы соглашаетесь на <span id="open-modal-btn"
-                            class="main__block__btnInfo-underlining">обработку персональных данных</span></p>
+                            class="main__block__btnInfo-underlining   open-modal-btn">обработку персональных данных</span></p>
                     <button type="button" class="main__block__btn button">Отправить</button>
                 </div>
             </div>
         </div>
-    </main>
+    </main> 
 
-    <div class="modal" id="my-modal">
+    <div class="modal" id="modal">
         <div class="modal__box">
             <button class="modal__close-btn" id="close-modal-btn">✕</button>
             <h1 class="modal__box__title">Политика в отношении персональных данных</h1>
@@ -341,6 +341,58 @@
                 </div>
 
             </div>
+        </div>
+    </div>
+
+ <!-- aside -->
+ <div class="aside">
+    <div class="container">
+        <div class="aside__block">
+            <h2 class="aside__block__title">Что привлекает наших клиентов?</h2>
+            <div class="aside__block__text">Наши преимущества</div>
+            <div class="aside__block__items">
+                <div class="aside__block__item">
+                    <p class="aside__block__item__text">Гарантия на каждую товарную позицию</p>
+                    <img class="aside__block__item__img" src="./images/aside1.png" alt="Картинка">
+                </div>
+                <div class="aside__block__item">
+                    <p class="aside__block__item__text">Ориентир на предпочтение клиента при выборе товара</p>
+                    <img class="aside__block__item__img" src="./images/aside3.png" alt="Картинка">
+                </div>
+                <div class="aside__block__item">
+                    <p class="aside__block__item__text">Сжатые сроки поставки</p>
+                    <img class="aside__block__item__img" src="./images/aside5.png" alt="Картинка">
+                </div>
+                <div class="aside__block__item">
+                    <p class="aside__block__item__text">Выгодные цены</p>
+                    <img class="aside__block__item__img" src="./images/aside2.png" alt="Картинка">
+                </div>
+                <div class="aside__block__item">
+                    <p class="aside__block__item__text">Большой ассортимент</p>
+                    <img class="aside__block__item__img" src="./images/aside4.png" alt="Картинка">
+                </div>
+                <div class="aside__block__item aside__block__item-blue" id="open-aside-btn">
+                    <p class="aside__block__item__text">Оставить заявку</p>
+                    <img class="aside__block__item__img" src="./images/aside6.png" alt="Картинка">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- aside__mod -->
+    <div class="aside__mod" id="aside__mod">
+        <div class="aside__modal">
+            <button class="aside__modal__close-btn" id="aside__modal__close-btn" >✕</button>
+            <h3 class="aside__modal__title">Бесплатная консультация</h3>
+            <form class="aside__modal__form">
+                <input class="aside__modal__form__input" type="text" placeholder="Ваше имя*">
+                <input class="aside__modal__form__input" type="number" placeholder="Номер телефона*">
+                <textarea class="aside__modal__form__textarea" placeholder="Ваш комментарий"></textarea>
+                <button class="aside__modal__form__button">Оставить</button>
+            </form>
+            <p class="aside__modal__text">*Нажимая на кнопку, Вы соглашаетесь на <span id="open-aside-modal-btn" 
+                    class="aside__modal__text-underlining">обработку персональных данных</span></p>
         </div>
     </div>
 
