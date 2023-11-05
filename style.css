@@ -661,7 +661,6 @@ p.wrap__body__right__item-mb0 {
     margin-bottom: 0;
 }
 
-
 /* aside */
 .aside {
     display: flex;
@@ -724,6 +723,27 @@ p.wrap__body__right__item-mb0 {
     background: url('images/subtract-blue.png') center no-repeat;
     color: #ffffff;
     cursor: pointer;
+    border: none;
+}
+
+.aside__block__item__img-blue-hover {
+    display: none;
+}
+
+.aside__block__item-blue:hover {
+    background: url('images/subtract.png') center no-repeat;
+    color: rgba(56, 56, 56, 1);
+    transition: background .4s, color .4s;
+
+    .aside__block__item__img-white-hover {
+        display: none;
+        transition: display .4s;
+    }
+
+    .aside__block__item__img-blue-hover {
+        display: block;
+        transition: display .4s;
+    }
 }
 
 .aside__block__item__img {
@@ -746,7 +766,7 @@ p.wrap__body__right__item-mb0 {
     left: 0;
     bottom: 0;
     z-index: 499;
-    width: 100%; 
+    width: 100%;
     height: 100vh;
     background-color: rgba(56, 56, 56, .5);
     display: grid;
@@ -754,7 +774,7 @@ p.wrap__body__right__item-mb0 {
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transform: opacity .4s, visibility .4s;   
+    transform: opacity .4s, visibility .4s;
 }
 
 .aside__modal {
@@ -797,6 +817,12 @@ p.wrap__body__right__item-mb0 {
     border: none;
     padding: 0;
     font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.aside__modal__close-btn:hover {
+    color: rgba(0, 70, 187, 1);
+    transition: color .4s;
 }
 
 .aside__modal__form {
@@ -885,4 +911,9 @@ p.wrap__body__right__item-mb0 {
 .aside__modal__text-underlining {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.aside__modal__text-underlining:hover {
+    color: rgba(0, 70, 187, 1);
+    transform: color .4s;
 }
