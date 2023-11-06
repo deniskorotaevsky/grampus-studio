@@ -41,5 +41,24 @@ let swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
     loop: true,
-    slidesPerView: 3
+    slidesPerView: 3,
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        575: {
+            slidesPerView: 2,
+            spaceAround: 40
+        },
+        640: {
+            slidesPerView: 2,
+            spaceAround: 40
+        },
+        991: {
+            slidesPerView: 3,
+            spaceAround: 40
+        }
+    }
 });
