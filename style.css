@@ -506,6 +506,12 @@ address>div {
     transition: background-color .5s, color .5s, border .5;
 }
 
+@media (max-width: 991px) {
+    .section__container__text {
+        width: 80%;
+    }
+}
+
 @media (max-width: 575px) {
     .section {
         display: flex;
